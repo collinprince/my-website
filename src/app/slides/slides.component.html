@@ -1,0 +1,11 @@
+<ngb-carousel class='slides' style='height: 100vh;' *ngIf='images'>
+  <ng-template class='slides h-100'  *ngFor='let image of images' ngbSlide>
+    <div id='slideDiv'  style="height: 100vh">
+      <img id='slideImg' class='slides' [src]='image.src'>
+    </div>
+    <div class='carousel-caption'>
+      <button id='return' (click)='this.home.homeSwitch()' type="button" class="btn btn-primary">return</button>
+    </div>
+  </ng-template>
+
+</ngb-carousel>

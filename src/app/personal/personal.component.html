@@ -1,0 +1,12 @@
+<h1 id='title' > Passions </h1>
+<div id='contain' class='container-fluid'>
+  <div id='cardHolder' class='row'>
+    <div class='col-lg-6 customHolder' *ngFor='let topic of topics'>
+      <div class='card customCard'>
+        <img id='pic' class="card-img-top rounded" [src]="topic.src" alt="Card image cap">
+        <div id='descriptionDiv' class="card-body">
+          <h5 id='textTitle' class="card-title">{{topic.name}}</h5>
+          <p class="card-text">{{topic.description}}</p>
+        </div>
+      </div>
+    </div>

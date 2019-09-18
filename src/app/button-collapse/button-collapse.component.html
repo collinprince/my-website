@@ -1,0 +1,20 @@
+
+<div id='bg' class="container-fluid" style="height: 100vh; background-color: #8bd8c6;">
+  <h1 id='title'> Experience </h1>
+  <div id='picture-box' class="row align-items-center justify-content-center">
+    <div id='picCard' class="col-sm-4 text-center" *ngFor = "let image of images" >
+      <a id='box' (click)="toggleCollapse(image.id)">
+        <img id="{{image.name}}" src="{{image.url}}" class="card-img about-images img-fluid rounded justify-self-center" >
+      </a>
+    </div>
+  </div>
+  <div class="row collapse justify-content-center pic-text" [class.show]="isCollapsed[image.id]" *ngFor="let image of images">
+    <div id='textBox' class="card col-sm-8 rounded">
+      <div id='tightText' class="card-body text-center">
+
+        {{image.description}}
+
+      </div>
+    </div>
+  </div>
+</div>

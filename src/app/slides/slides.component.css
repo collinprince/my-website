@@ -1,0 +1,22 @@
+html, body {
+  background: black
+}
+
+#slideDiv {
+  background: linear-gradient(to bottom, #ffccff 0%, #0099ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#slideImg{
+  justify-content: center;
+  vertical-align: middle;
+  height: 30rem;
+  width: 22.5rem;
+}
+
+#return {
+  background-color: #66ffcc;
+  color: black;
+}

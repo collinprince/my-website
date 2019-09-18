@@ -1,0 +1,28 @@
+#bar {
+  opacity: .2;
+  background: white;
+  transition-duration: .25s;
+}
+
+#bar:hover {
+  opacity: 1;
+  transition-duration: .25s;
+}
+
+.bar a {
+  -webkit-transition: all 0.5s ease;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: .5;
+}
+
+@media(max-width: 576px) {
+  #bar {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,79 @@
+#bg {
+  background: linear-gradient(to bottom, #ffff00 0%, #ff5050 100%);
+  border: 0;
+}
+
+#title {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+#picture-box {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-images {
+  outline-style: groove;
+  height: 80%;
+  width: 80%;
+  transition-duration: .2s;
+}
+
+#picCard {
+  padding: 0% 2.5%;
+  height: 45%;
+  width: 30%;
+  text-align: center;
+  position: relative;
+}
+
+#textBox {
+  position: relative;
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+#tightText {
+  opacity: 1;
+  font-weight: bold;
+  color: #000000;
+  font-size: 13px;
+}
+
+.pic-text {
+  transition-duration: .2s;
+  /* background: blue */
+}
+
+.pic-text:show {
+  transition-duration: .2s;
+  /* transition: opacity .2s; */
+  /* opacity: 0; */
+}
+
+.about-images:hover {
+  transform: scale(1.1);
+  transition-duration: .2s;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .about-images{
+    height: 50%;
+    vertical-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  #tightText {
+    font-size: 9px;
+  }
+}

@@ -1,24 +1,28 @@
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav id='bar' class="navbar fixed-top navbar-expand-lg" >
     <a class="navbar-brand" routerLink="#">
-        <img src = '../assets/slack.png' width=50 height=50 class="d-inline-block align-top">
+        :p
     <!-- <a class="navbar-brand" routerLink="#">Navbar</a> -->
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link active" routerLink="/">
+  <button (click)='toggleCollapse()' class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}" class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" style="float: right;">
+        <div class="navbar-nav" style="float: right;">
+            <a class="nav-item nav-link active" (click)="this.homeScroll()">
                 Home <span class='sr-only'>(current)</span>
             </a>
-            <a class="nav-item nav-link active" routerLink="/page1">
-
-                About Me <span class="sr-only">(current)</span>
+            <a (click)="this.scrollToElement('2')" class="nav-item nav-link active"   >
+                Education <span class="sr-only">(current)</span>
             </a>
 
-            <a class="nav-item nav-link active" routerLink="/passions">
+            <a class="nav-item nav-link active" (click)="this.scrollToElement('3')">
+                Experience <span class="sr-only">(current)</span>
+            </a>
+            <a class="nav-item nav-link active" (click)="this.scrollToElement('4')">
                 Passions <span class="sr-only">(current)</span>
+            </a>
+            <a class="nav-item nav-link active" (click)="this.scrollToElement('5')">
+              Connect <span class="sr-only">(current)</span>
             </a>
         </div>
     </div>
