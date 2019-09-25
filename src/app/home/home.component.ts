@@ -37,7 +37,7 @@ constructor(private renderer: Renderer2) { }
     this.randomPic = this.newNumber;
     console.log(this.randomPic);
     console.log(this.count);
-    this.image = '../assets/' + this.newNumber + '.jpg';
+    this.image = 'assets/' + this.newNumber + '.jpg';
     this.count++;
     return this.image;
   }
