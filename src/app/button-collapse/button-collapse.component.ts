@@ -11,7 +11,7 @@ export class ButtonCollapseComponent implements OnInit {
   currentlyShown: number;
 
   images: any[] = [
-    {name: 'idemia', url: '../assets/experience/idemia.jpg',
+    {name: 'idemia', url: 'assets/experience/idemia.jpg',
     description: '(June - September 2019) IDEMIA is the global leader in Augmented Identies and provides customers with a range of physical and digital identity solutions.' +
     " At IDEMIA, I served as a Software Engineering Intern on the Driver's License Enrollment Team."
     + " I developed and advanced skills in Angular with Typescript, Automated Testing using Selenium and Protractor, as well as working in an Agile Scrum Framework with a Kanban board. ",
