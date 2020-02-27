@@ -4,14 +4,14 @@ p {
 
 #contain {
   height: 100vh;
-  background: linear-gradient(to bottom, #ff5050 0%, #6699ff 100%);
+  background: #fbb84e;
   min-width: 300px;
   min-height: 560px;
 }
 
 #cardHolder {
-  padding-top: 5%;
-  height: 100%;
+  /* padding-top: 5%; */
+  height: 100vh;
   /* height: 90vh; */
   width: 100%;
   margin-left: auto;
@@ -39,10 +39,11 @@ p {
 }
 
 .customHolder {
-  height: 50%;
+  height: 45%;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .customCard {
@@ -55,11 +56,16 @@ p {
 
 #title {
   text-align: center;
-  background-color: #ff5050;
-  /* padding-bottom: 0; */
-  /* border-bottom: 0; */
   margin-bottom: 0;
   border: none;
+  /* margin-top: 1%; */
+}
+
+#text-box {
+  height: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 #textTitle {

@@ -1,5 +1,5 @@
 #bar {
-  opacity: .2;
+  opacity: 0;
   background: white;
   transition-duration: .25s;
 }

@@ -1,5 +1,9 @@
 #cont {
-  background: #6699ff;
+background: #fbb84e;
+}
+
+#connect-row {
+  background: #fbb84e;
 }
 
 #list-container {
@@ -17,4 +21,10 @@ a {
 
 a:hover {
   opacity: .5;
+}
+
+@media (max-width: 400px) {
+  a {
+    font-size: .8rem;
+  }
 }

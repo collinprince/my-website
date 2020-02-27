@@ -14,7 +14,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background: linear-gradient(to bottom, #ffccff 0%, #0099ff 100%);
+  /* background: linear-gradient(to bottom, #ffccff 0%, #0099ff 100%); */
+  /* background: #4ea5a4; */
+  background: #4ea5a4;
 }
 
 .center-text {

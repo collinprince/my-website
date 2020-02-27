@@ -3,7 +3,8 @@ html, body {
 }
 
 #slideDiv {
-  background: linear-gradient(to bottom, #ffccff 0%, #0099ff 100%);
+  /* background: linear-gradient(to bottom, #ffccff 0%, #0099ff 100%); */
+  background: #4ea5a4;
   display: flex;
   align-items: center;
   justify-content: center;
